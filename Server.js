@@ -18,7 +18,7 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 
 // Allow all origins during testing
 app.use(cors({
-    origin: "https://ntp.onrender.com", // Allow requests from frontend
+    origin: "https://ntp.06duonrender.com", // Allow requests from frontend
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true // Allow cookies if needed
 }));
