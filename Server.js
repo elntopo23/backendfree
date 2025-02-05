@@ -16,11 +16,13 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch(err => console.log(err));
 
 
-// Allow all origins during testing
+const cors = require("cors");
+
 app.use(cors({
-    origin: "https://ntp.06du.onrender.com", 
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true 
+    origin:  "https://ntp-06du.onrender.com"// Replace with your frontend Render URL
+    methods:["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true
 }));
 
 // Photo Schema
