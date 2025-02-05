@@ -12,7 +12,7 @@ app.use(cors());
 
  const MONGO_URI="mongodb+srv://elntopo793:nWX1HJag3rEoty4C@cluster0.a7ymo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 "
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log("mango connected"))
+    .then(() => console.log("mango coonnected"))
     .catch(err => console.log(err));
 
 
