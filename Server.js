@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB Connection  
-const MONGO_URI="mongodb+srv://NTP:ntp22@cluster0.hve41.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-//  const MONGO_URI="mongodb+srv://elntopo793:nWX1HJag3rEoty4C@cluster0.a7ymo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 "
+// const MONGO_URI="mongodb+srv://NTP:ntp22@cluster0.hve41.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+ const MONGO_URI="mongodb+srv://elntopo793:nWX1HJag3rEoty4C@cluster0.a7ymo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0 "
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("mango connected"))
     .catch(err => console.log(err));
